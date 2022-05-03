@@ -14,7 +14,7 @@ namespace GuessNumber.Views
     {
         Random random = new Random();
         int magicNum;
-        int n;
+       
         int life = 5;
         
         public PlayPage()
@@ -37,14 +37,16 @@ namespace GuessNumber.Views
                     else
                     {
                         life--;
-                        if (magicNum < Convert.ToInt32(Num.Text)) { T.Text = "C'est plus petit!!!"; }else
+                        if (magicNum < Convert.ToInt32(Num.Text)) { T.Text = "C'est plus petit!!!"; }
+                        else
                         {
                             T.Text = "c'est plus grand !!!";
 
                         }
                     }
-                } else {T.Text = "Veuillez Saisir un bombre compris entre 1 et 20!!!"; }
-            } else {T.Text = "Veuillez Saisir un nombre!!!"; }
+                }
+                else { DisplayAlert("Erreur Saisi", "Veuillez Saisir un bombre compris entre 1 et 20!!!", "ok"); }
+            } else { DisplayAlert("Erreur Saisi", "Veuillez Saisir un nombre!!!", "ok"); }
         }
        
         public bool isConvetible(string c)
@@ -52,7 +54,7 @@ namespace GuessNumber.Views
             try { 
                 Convert.ToInt32(c);
                 return true;
-            }catch(Exception e) { return false; };
+            }catch(Exception) { return false; };
         }
         public bool ValidValue(int val)
         {
