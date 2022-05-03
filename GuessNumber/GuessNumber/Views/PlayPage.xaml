@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuessNumber.Views.PlayPage" Title="Game">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout   HeightRequest="200"  HorizontalOptions="FillAndExpand" BackgroundColor="white">
+                <Label Text="A Toi De Jouer" FontSize="25" BackgroundColor="Gray" TextColor="White"
+                VerticalOptions="Center"  HorizontalOptions="Center"
+                 Margin="30, 10" HorizontalTextAlignment="Center" WidthRequest="300" />
+            </StackLayout>
+            
+            
+        <StackLayout HorizontalOptions="FillAndExpand" Padding="10,100">
+            <Label Text="Devinez Le Nombre Magique"
+                   HorizontalTextAlignment="Center"
+                HorizontalOptions="Center"
+                   FontSize="Large" TextColor="Black"/>
+                <Label Text="Veuillez Entrer Un Nombre"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="Center"
+                   FontSize="Medium" TextColor="White"/>
+                <Label Text="Entre 1 Et 20"
+                   HorizontalTextAlignment="Center"                
+                    HorizontalOptions="Center"
+                   FontSize="Medium" TextColor="White"/>
+
+                <Entry  x:Name="Num"    Placeholder="Saisissez un nombre" Margin="15,3"/>
+
+                <Button Clicked="TryGuess"  Style="{StaticResource BtnStyle}" Margin="35, 0" Text="Try"/>
+                <Label x:Name="T" HorizontalOptions="Center" />
+                <Label x:Name="indice" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuessNumber.Views.WinPage" Title="Win">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout   HeightRequest="60"  HorizontalOptions="FillAndExpand" BackgroundColor="white">
+                <Label Text="Congratulation !!!" FontSize="25" BackgroundColor="Gray" TextColor="White"
+                VerticalOptions="Center"  HorizontalOptions="Center"
+                 Margin="30, 10" HorizontalTextAlignment="Center" WidthRequest="300" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+
+                <Label Text="Congratulation !!!"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium" TextColor="Black"/>
+                <Label x:Name="NumD"
+                   HorizontalTextAlignment="Center"                
+                    HorizontalOptions="Center"
+                   FontSize="Medium" TextColor="Black"/>
+            </StackLayout>
+        <StackLayout>
+        <Button Clicked="Button_Clicked"  Style="{StaticResource BtnStyle}" Margin="25, 5" Text="Return" />
+                
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

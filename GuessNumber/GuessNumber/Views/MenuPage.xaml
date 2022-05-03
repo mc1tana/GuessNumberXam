@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuessNumber.Views.MenuPage" Title="GuessApp">
+    <ContentPage.Content>
+        <StackLayout>
+        <StackLayout   HeightRequest="60"  HorizontalOptions="FillAndExpand" BackgroundColor="white">
+                <Label Text="Bienvenu" FontSize="25" BackgroundColor="Gray" TextColor="White"
+                VerticalOptions="Center"  HorizontalOptions="Center"
+                 Margin="30, 10" HorizontalTextAlignment="Center" WidthRequest="300" />
+            </StackLayout>
+            <StackLayout  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="LightGray" Padding="0,80,0,0">
+                
+                <Image Source="DesNF.png"/>
+                <Label Text="Magic Number" TextColor="Aquamarine" FontSize="25"
+                  WidthRequest="250" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                <Button Text="GoToPlay" Clicked="GoToPlay" Style="{StaticResource BtnStyle}" WidthRequest="50" HeightRequest="40" Margin="50,100,50,0" CornerRadius="10"/>
+                
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
