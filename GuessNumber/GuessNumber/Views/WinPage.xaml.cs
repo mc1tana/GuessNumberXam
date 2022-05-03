@@ -21,7 +21,7 @@ namespace GuessNumber.Views
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PopAsync();
+            Navigation.PopToRootAsync(); 
         }
     }
 }
