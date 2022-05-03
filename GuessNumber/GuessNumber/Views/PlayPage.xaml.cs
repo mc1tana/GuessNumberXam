@@ -37,10 +37,10 @@ namespace GuessNumber.Views
                     else
                     {
                         life--;
-                        if (magicNum < Convert.ToInt32(Num.Text)) { T.Text = "C'est plus petit!!!"; }
+                        if (magicNum < Convert.ToInt32(Num.Text)) { DisplayAlert("Indice", "C'est plus petit!!!", "ok"); }
                         else
                         {
-                            T.Text = "c'est plus grand !!!";
+                            DisplayAlert("Indice", "C'Est Plus Grand!!!", "ok");
 
                         }
                     }
