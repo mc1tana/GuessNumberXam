@@ -628,3 +628,4 @@ C:\Users\tory\Documents\Mich\GuessNumber\GuessNumber\GuessNumber.Android\obj\Deb
 C:\Users\tory\Documents\Mich\GuessNumber\GuessNumber\GuessNumber.Android\obj\Debug\120\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\tory\Documents\Mich\GuessNumber\GuessNumber\GuessNumber.Android\obj\Debug\120\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\tory\Documents\Mich\GuessNumber\GuessNumber\GuessNumber.Android\obj\Debug\120\res\drawable\desnf.png
+C:\Users\tory\Documents\Mich\GuessNumber\GuessNumber\GuessNumber.Android\obj\Debug\120\res\drawable\victory.jpg

@@ -9,8 +9,11 @@
                 VerticalOptions="Center"  HorizontalOptions="Center"
                  Margin="30, 10" HorizontalTextAlignment="Center" WidthRequest="300" />
             </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-
+            <StackLayout HorizontalOptions="Center"  Margin="0,30,0,15">
+                <Image Source="victory.jpg"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,0,0,30">
+                
                 <Label Text="Congratulation !!!"
                    HorizontalTextAlignment="Center"
                    FontSize="Medium" TextColor="Black"/>
